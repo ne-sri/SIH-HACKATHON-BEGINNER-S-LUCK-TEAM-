@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Civic Connect - Report an Issue</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         NAVIGATION BAR
+         ================================= -->
+
+    <header class="navbar">
+
+        <div class="navbar-container">
+
+
+            <a href="home.html" class="nav-brand">
+
+                <span class="nav-logo">CC</span>
+
+                <span class="nav-title">
+                    Civic Connect
+                </span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="home.html">
+                    Home
+                </a>
+
+                <a href="reports.html">
+                    My Reports
+                </a>
+
+            </nav>
+
+
+            <div class="nav-user">
+
+                <div class="user-avatar">
+                    C
+                </div>
+
+                <span class="user-name">
+                    Citizen
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================================
+         REPORT PAGE
+         ================================= -->
+
+    <main class="report-page">
+
+        <div class="report-container">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="page-header">
+
+                <a href="home.html" class="back-link">
+                    ← Back to dashboard
+                </a>
+
+                <p class="page-label">
+                    CIVIC CONNECT
+                </p>
+
+                <h1>
+                    Report a civic issue
+                </h1>
+
+                <p>
+                    Tell us about a problem in your community.
+                    Your report will help the concerned authorities
+                    take appropriate action.
+                </p>
+
+            </div>
+
+
+
+            <!-- REPORT FORM -->
+
+            <form id="reportForm" class="report-form">
+
+
+                <!-- ================================
+                     BASIC INFORMATION
+                     ================================= -->
+
+                <section class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <h2>
+                            Issue information
+                        </h2>
+
+                        <p>
+                            Provide basic details about the issue.
+                        </p>
+
+                    </div>
+
+
+                    <!-- ISSUE TITLE -->
+
+                    <div class="form-group">
+
+                        <label for="issueTitle">
+                            Issue title
+                        </label>
+
+                        <input
+                            type="text"
+                            id="issueTitle"
+                            name="issueTitle"
+                            placeholder="e.g. Large pothole near main road"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- CATEGORY -->
+
+                    <div class="form-group">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select
+                            id="category"
+                            name="category"
+                            required
+                        >
+
+                            <option value="" disabled selected>
+                                Select an issue category
+                            </option>
+
+                            <option value="roads">
+                                Roads & Potholes
+                            </option>
+
+                            <option value="streetlights">
+                                Streetlights
+                            </option>
+
+                            <option value="garbage">
+                                Garbage & Waste
+                            </option>
+
+                            <option value="water">
+                                Water Supply
+                            </option>
+
+                            <option value="drainage">
+                                Drainage & Sewage
+                            </option>
+
+                            <option value="public-property">
+                                Public Property
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- DESCRIPTION -->
+
+                    <div class="form-group">
+
+                        <label for="description">
+                            Description
+                        </label>
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="5"
+                            placeholder="Describe the issue clearly. Mention any useful details that can help authorities understand the problem."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ================================
+                     LOCATION
+                     ================================= -->
+
+                <section class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <h2>
+                            Location
+                        </h2>
+
+                        <p>
+                            Where is this issue located?
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Location / Address
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="Enter the location or nearby landmark"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="location-btn"
+                    >
+                        📍 Use my current location
+                    </button>
+
+                    <p class="location-note">
+                        Location services will be connected with the
+                        backend later.
+                    </p>
+
+                </section>
+
+
+
+                <!-- ================================
+                     IMAGE
+                     ================================= -->
+
+                <section class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <h2>
+                            Add evidence
+                        </h2>
+
+                        <p>
+                            Upload a photo to help explain the issue.
+                        </p>
+
+                    </div>
+
+
+                    <div class="upload-area">
+
+                        <div class="upload-icon">
+                            📷
+                        </div>
+
+                        <h3>
+                            Upload an image
+                        </h3>
+
+                        <p>
+                            JPG, PNG or JPEG
+                        </p>
+
+                        <label
+                            for="issueImage"
+                            class="upload-btn"
+                        >
+                            Choose image
+                        </label>
+
+                        <input
+                            type="file"
+                            id="issueImage"
+                            name="issueImage"
+                            accept="image/png, image/jpeg"
+                            hidden
+                        >
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ================================
+                     PRIORITY
+                     ================================= -->
+
+                <section class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <h2>
+                            Priority
+                        </h2>
+
+                        <p>
+                            How urgent is this issue?
+                        </p>
+
+                    </div>
+
+
+                    <div class="priority-options">
+
+
+                        <label class="priority-option">
+
+                            <input
+                                type="radio"
+                                name="priority"
+                                value="low"
+                            >
+
+                            <span>
+                                <strong>Low</strong>
+                                <small>
+                                    General issue
+                                </small>
+                            </span>
+
+                        </label>
+
+
+
+                        <label class="priority-option">
+
+                            <input
+                                type="radio"
+                                name="priority"
+                                value="medium"
+                                checked
+                            >
+
+                            <span>
+                                <strong>Medium</strong>
+                                <small>
+                                    Needs attention
+                                </small>
+                            </span>
+
+                        </label>
+
+
+
+                        <label class="priority-option">
+
+                            <input
+                                type="radio"
+                                name="priority"
+                                value="high"
+                            >
+
+                            <span>
+                                <strong>High</strong>
+                                <small>
+                                    Requires urgent attention
+                                </small>
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ================================
+                     SUBMIT
+                     ================================= -->
+
+                <div class="submit-area">
+
+                    <a
+                        href="home.html"
+                        class="cancel-btn"
+                    >
+                        Cancel
+                    </a>
+
+                    <button
+                        type="submit"
+                        class="primary-btn submit-btn"
+                    >
+                        Submit Report
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

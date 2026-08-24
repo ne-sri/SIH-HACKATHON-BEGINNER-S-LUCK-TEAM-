@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Civic Connect - Login</title>
+
+    <!-- Shared CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <!-- Left side / Branding -->
+        <section class="auth-brand">
+
+            <div class="brand-content">
+
+                <div class="brand-logo">
+                    <span class="logo-icon">CC</span>
+                    <span class="logo-text">Civic Connect</span>
+                </div>
+
+                <h1>
+                    Make your city<br>
+                    <span>better together.</span>
+                </h1>
+
+                <p>
+                    Report civic issues, track complaints,
+                    and help create a cleaner and better community.
+                </p>
+
+                <div class="brand-features">
+
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Report civic issues easily</span>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Track your complaints</span>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Stay updated on resolutions</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Right side / Login form -->
+        <section class="auth-form-section">
+
+            <div class="login-card">
+
+                <div class="mobile-logo">
+                    <div class="brand-logo">
+                        <span class="logo-icon">CC</span>
+                        <span class="logo-text">Civic Connect</span>
+                    </div>
+                </div>
+
+                <div class="form-heading">
+                    <h2>Welcome back</h2>
+                    <p>Login to continue to Civic Connect</p>
+                </div>
+
+
+                <form id="loginForm">
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">Email address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <div class="label-row">
+                            <label for="password">Password</label>
+
+                            <a href="#" class="forgot-password">
+                                Forgot password?
+                            </a>
+                        </div>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Remember me -->
+                    <div class="remember-row">
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                id="remember"
+                                name="remember"
+                            >
+
+                            <span>Remember me</span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Login button -->
+                    <button type="submit" class="primary-btn">
+                        Login
+                    </button>
+
+                </form>
+
+
+                <!-- Sign up -->
+                <div class="signup-text">
+
+                    <span>Don't have an account?</span>
+
+                    <a href="signup.html">
+                        Create an account
+                    </a>
+
+                </div>
+
+
+                <!-- Demo note -->
+                <div class="demo-note">
+                    <span>Prototype</span>
+                    <p>
+                        Civic Connect — Citizen Portal
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

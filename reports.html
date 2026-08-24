@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Civic Connect - My Reports</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         NAVIGATION BAR
+         ================================= -->
+
+    <header class="navbar">
+
+        <div class="navbar-container">
+
+
+            <!-- LOGO -->
+
+            <a href="home.html" class="nav-brand">
+
+                <span class="nav-logo">CC</span>
+
+                <span class="nav-title">
+                    Civic Connect
+                </span>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="nav-links">
+
+                <a href="home.html">
+                    Home
+                </a>
+
+                <a href="reports.html" class="active">
+                    My Reports
+                </a>
+
+            </nav>
+
+
+            <!-- USER -->
+
+            <div class="nav-user">
+
+                <div class="user-avatar">
+                    C
+                </div>
+
+                <span class="user-name">
+                    Citizen
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================================
+         MAIN CONTENT
+         ================================= -->
+
+    <main class="reports-page">
+
+        <div class="reports-container">
+
+
+            <!-- PAGE HEADER -->
+
+            <section class="reports-header">
+
+                <div>
+
+                    <p class="page-label">
+                        CITIZEN PORTAL
+                    </p>
+
+                    <h1>
+                        My Reports
+                    </h1>
+
+                    <p>
+                        View and track all the civic issues
+                        you have reported.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="report.html"
+                    class="primary-btn new-report-btn"
+                >
+                    + Report an Issue
+                </a>
+
+            </section>
+
+
+
+            <!-- FILTERS -->
+
+            <section class="reports-filters">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="submitted"
+                >
+                    Submitted
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="review"
+                >
+                    In Review
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="resolved"
+                >
+                    Resolved
+                </button>
+
+            </section>
+
+
+
+            <!-- REPORTS -->
+
+            <section class="all-reports">
+
+
+                <!-- REPORT 1 -->
+
+                <a
+                    href="details.html"
+                    class="full-report-card"
+                    data-status="review"
+                >
+
+                    <div class="full-report-icon">
+                        🛣️
+                    </div>
+
+
+                    <div class="full-report-content">
+
+                        <div class="report-card-top">
+
+                            <h2>
+                                Large Pothole Near Main Road
+                            </h2>
+
+                            <span class="status-badge status-review">
+                                In Review
+                            </span>
+
+                        </div>
+
+
+                        <p class="report-description">
+                            Large pothole causing difficulty for
+                            vehicles near the main road.
+                        </p>
+
+
+                        <div class="report-meta">
+
+                            <span>
+                                📍 Main Road
+                            </span>
+
+                            <span>
+                                📅 20 Aug 2026
+                            </span>
+
+                            <span>
+                                ID: CC-1001
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <span class="report-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <!-- REPORT 2 -->
+
+                <a
+                    href="details.html"
+                    class="full-report-card"
+                    data-status="resolved"
+                >
+
+                    <div class="full-report-icon">
+                        💡
+                    </div>
+
+
+                    <div class="full-report-content">
+
+                        <div class="report-card-top">
+
+                            <h2>
+                                Broken Streetlight
+                            </h2>
+
+                            <span class="status-badge status-resolved">
+                                Resolved
+                            </span>
+
+                        </div>
+
+
+                        <p class="report-description">
+                            Streetlight has not been working
+                            for several nights.
+                        </p>
+
+
+                        <div class="report-meta">
+
+                            <span>
+                                📍 Green Park
+                            </span>
+
+                            <span>
+                                📅 17 Aug 2026
+                            </span>
+
+                            <span>
+                                ID: CC-1002
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <span class="report-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <!-- REPORT 3 -->
+
+                <a
+                    href="details.html"
+                    class="full-report-card"
+                    data-status="submitted"
+                >
+
+                    <div class="full-report-icon">
+                        🗑️
+                    </div>
+
+
+                    <div class="full-report-content">
+
+                        <div class="report-card-top">
+
+                            <h2>
+                                Overflowing Garbage Bin
+                            </h2>
+
+                            <span class="status-badge status-submitted">
+                                Submitted
+                            </span>
+
+                        </div>
+
+
+                        <p class="report-description">
+                            Garbage bin has been overflowing
+                            for the past few days.
+                        </p>
+
+
+                        <div class="report-meta">
+
+                            <span>
+                                📍 Sector 4
+                            </span>
+
+                            <span>
+                                📅 15 Aug 2026
+                            </span>
+
+                            <span>
+                                ID: CC-1003
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <span class="report-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <!-- REPORT 4 -->
+
+                <a
+                    href="details.html"
+                    class="full-report-card"
+                    data-status="resolved"
+                >
+
+                    <div class="full-report-icon">
+                        💧
+                    </div>
+
+
+                    <div class="full-report-content">
+
+                        <div class="report-card-top">
+
+                            <h2>
+                                Water Leakage
+                            </h2>
+
+                            <span class="status-badge status-resolved">
+                                Resolved
+                            </span>
+
+                        </div>
+
+
+                        <p class="report-description">
+                            Water leakage from a damaged pipeline
+                            near the residential area.
+                        </p>
+
+
+                        <div class="report-meta">
+
+                            <span>
+                                📍 Model Town
+                            </span>
+
+                            <span>
+                                📅 10 Aug 2026
+                            </span>
+
+                            <span>
+                                ID: CC-1004
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <span class="report-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

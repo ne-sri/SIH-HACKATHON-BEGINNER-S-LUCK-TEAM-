@@ -1,0 +1,2457 @@
+/* =====================================================
+   CIVIC CONNECT
+   Shared Styles
+   ===================================================== */
+
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+    line-height: 1.5;
+}
+
+
+/* ---------- COMMON ELEMENTS ---------- */
+
+a {
+    text-decoration: none;
+}
+
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   LOGIN / AUTH PAGE
+   ===================================================== */
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+/* ---------- LEFT BRANDING SECTION ---------- */
+
+.auth-brand {
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px;
+
+    background: linear-gradient(
+        135deg,
+        #0f766e,
+        #115e59
+    );
+
+    color: white;
+}
+
+
+.brand-content {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+
+/* ---------- LOGO ---------- */
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: white;
+    color: #0f766e;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+.logo-text {
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+
+/* ---------- BRANDING HEADING ---------- */
+
+.auth-brand h1 {
+    margin-top: 70px;
+
+    font-size: clamp(42px, 5vw, 64px);
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+}
+
+
+.auth-brand h1 span {
+    color: #99f6e4;
+}
+
+
+.auth-brand p {
+    margin-top: 25px;
+
+    max-width: 470px;
+
+    color: #d9f5f1;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ---------- FEATURES ---------- */
+
+.brand-features {
+    margin-top: 45px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 15px;
+    color: #e6fffc;
+}
+
+
+.feature-icon {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   LOGIN FORM SECTION
+   ===================================================== */
+
+.auth-form-section {
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    background: #f8fafc;
+}
+
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+}
+
+
+/* ---------- MOBILE LOGO ---------- */
+
+.mobile-logo {
+    display: none;
+}
+
+
+/* ---------- FORM HEADING ---------- */
+
+.form-heading {
+    margin-bottom: 32px;
+}
+
+
+.form-heading h2 {
+    font-size: 32px;
+    line-height: 1.2;
+
+    color: #172033;
+
+    letter-spacing: -0.8px;
+}
+
+
+.form-heading p {
+    margin-top: 8px;
+
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+
+/* ---------- FORM GROUP ---------- */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* ---------- LABEL ROW ---------- */
+
+.label-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.label-row label {
+    margin-bottom: 8px;
+}
+
+
+.forgot-password {
+    margin-bottom: 8px;
+
+    color: #0f766e;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- INPUTS ---------- */
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #d7dee8;
+    border-radius: 9px;
+
+    outline: none;
+
+    background: white;
+
+    color: #172033;
+
+    font-size: 15px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #0f766e;
+
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+
+
+.form-group input::placeholder {
+    color: #94a3b8;
+}
+
+
+/* ---------- REMEMBER ME ---------- */
+
+.remember-row {
+    margin-top: -4px;
+    margin-bottom: 22px;
+}
+
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+.checkbox-label input {
+    width: 15px;
+    height: 15px;
+
+    accent-color: #0f766e;
+
+    cursor: pointer;
+}
+
+
+/* ---------- PRIMARY BUTTON ---------- */
+
+.primary-btn {
+    width: 100%;
+
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #0f766e;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.primary-btn:hover {
+    background: #0d625c;
+
+    box-shadow: 0 7px 18px rgba(15, 118, 110, 0.2);
+
+    transform: translateY(-1px);
+}
+
+
+.primary-btn:active {
+    transform: translateY(0);
+}
+
+
+/* ---------- SIGN UP ---------- */
+
+.signup-text {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    font-size: 14px;
+
+    color: #64748b;
+}
+
+
+.signup-text a {
+    color: #0f766e;
+
+    font-weight: 700;
+}
+
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- DEMO NOTE ---------- */
+
+.demo-note {
+    margin-top: 40px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e2e8f0;
+
+    text-align: center;
+}
+
+
+.demo-note span {
+    display: inline-block;
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    background: #ccfbf1;
+    color: #0f766e;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.demo-note p {
+    margin-top: 7px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    .auth-brand {
+        padding: 40px;
+    }
+
+    .auth-brand h1 {
+        font-size: 45px;
+    }
+
+    .auth-form-section {
+        padding: 30px;
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    .auth-page {
+        min-height: 100vh;
+
+        display: block;
+    }
+
+
+    /* Hide desktop branding */
+
+    .auth-brand {
+        display: none;
+    }
+
+
+    /* Form takes full screen */
+
+    .auth-form-section {
+        width: 100%;
+        min-height: 100vh;
+
+        padding: 30px 22px;
+
+        align-items: flex-start;
+    }
+
+
+    .login-card {
+        max-width: 500px;
+
+        margin: 0 auto;
+    }
+
+
+    /* Show mobile logo */
+
+    .mobile-logo {
+        display: flex;
+
+        margin-bottom: 55px;
+    }
+
+
+    .mobile-logo .logo-icon {
+        background: #0f766e;
+        color: white;
+    }
+
+
+    .mobile-logo .logo-text {
+        color: #172033;
+    }
+
+
+    .form-heading h2 {
+        font-size: 29px;
+    }
+
+
+    .form-heading {
+        margin-bottom: 28px;
+    }
+
+
+    .signup-text {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 380px) {
+
+    .auth-form-section {
+        padding: 25px 18px;
+    }
+
+
+    .mobile-logo {
+        margin-bottom: 45px;
+    }
+
+
+    .form-heading h2 {
+        font-size: 26px;
+    }
+
+
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+        padding: 13px;
+    }
+
+}
+/* =====================================================
+   SIGN UP PAGE
+   ===================================================== */
+
+
+/* Slightly smaller spacing for the longer signup form */
+
+#signupForm .form-group {
+    margin-bottom: 17px;
+}
+
+
+/* Signup terms */
+
+#signupForm .remember-row {
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+
+/* Make the terms text slightly smaller */
+
+#signupForm .checkbox-label {
+    font-size: 12px;
+}
+
+
+/* Mobile signup adjustments */
+
+@media (max-width: 700px) {
+
+    #signupForm .form-group {
+        margin-bottom: 16px;
+    }
+
+    #signupForm .remember-row {
+        margin-bottom: 18px;
+    }
+
+}
+
+/* =====================================================
+   HOME / CITIZEN DASHBOARD
+   ===================================================== */
+
+
+/* ---------- NAVIGATION BAR ---------- */
+
+.navbar {
+    width: 100%;
+
+    background: white;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+.navbar-container {
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 16px 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ---------- NAV BRAND ---------- */
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #172033;
+}
+
+
+.nav-logo {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #0f766e;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+.nav-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ---------- NAV LINKS ---------- */
+
+.nav-links {
+    display: flex;
+
+    gap: 30px;
+
+    margin-left: 70px;
+}
+
+
+.nav-links a {
+    position: relative;
+
+    padding: 8px 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.nav-links a:hover {
+    color: #0f766e;
+}
+
+
+.nav-links a.active {
+    color: #0f766e;
+}
+
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -17px;
+
+    height: 2px;
+
+    background: #0f766e;
+}
+
+
+/* ---------- USER ---------- */
+
+.nav-user {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.user-avatar {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ccfbf1;
+    color: #0f766e;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.user-name {
+    color: #475569;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   DASHBOARD
+   ===================================================== */
+
+.dashboard {
+    min-height: calc(100vh - 71px);
+
+    background: #f8fafc;
+
+    padding: 45px 30px 70px;
+}
+
+
+.dashboard-container {
+    max-width: 1180px;
+
+    margin: 0 auto;
+}
+
+
+/* ---------- WELCOME ---------- */
+
+.welcome-section {
+    margin-bottom: 30px;
+}
+
+
+.welcome-label {
+    margin-bottom: 7px;
+
+    color: #0f766e;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.welcome-section h1 {
+    color: #172033;
+
+    font-size: 32px;
+
+    letter-spacing: -0.8px;
+}
+
+
+.welcome-description {
+    margin-top: 7px;
+
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   REPORT BANNER
+   ===================================================== */
+
+.report-banner {
+    padding: 25px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    border-radius: 14px;
+
+    background: #0f766e;
+
+    color: white;
+
+    box-shadow: 0 10px 25px rgba(15, 118, 110, 0.12);
+}
+
+
+.report-banner-content {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.report-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    font-size: 23px;
+}
+
+
+.report-banner h2 {
+    font-size: 18px;
+}
+
+
+.report-banner p {
+    margin-top: 4px;
+
+    color: #ccfbf1;
+
+    font-size: 13px;
+}
+
+
+.report-btn {
+    width: auto;
+
+    flex-shrink: 0;
+
+    padding: 12px 20px;
+
+    background: white;
+    color: #0f766e;
+
+    box-shadow: none;
+}
+
+
+.report-btn:hover {
+    background: #f0fdfa;
+
+    box-shadow: none;
+}
+
+
+/* =====================================================
+   SECTION HEADINGS
+   ===================================================== */
+
+.stats-section,
+.recent-section {
+    margin-top: 42px;
+}
+
+
+.section-heading {
+    margin-bottom: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.section-heading h2 {
+    color: #172033;
+
+    font-size: 19px;
+
+    letter-spacing: -0.3px;
+}
+
+
+.section-heading a {
+    color: #0f766e;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.section-heading a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   STATISTICS
+   ===================================================== */
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.stat-card {
+    padding: 22px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+
+    background: white;
+}
+
+
+.stat-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #f0fdfa;
+
+    font-size: 18px;
+}
+
+
+.stat-number {
+    color: #172033;
+
+    font-size: 23px;
+    font-weight: 800;
+}
+
+
+.stat-label {
+    margin-top: 1px;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   RECENT REPORTS
+   ===================================================== */
+
+.reports-list {
+    overflow: hidden;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+
+    background: white;
+}
+
+
+.report-item {
+    padding: 18px 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    color: inherit;
+
+    transition: background 0.2s ease;
+}
+
+
+.report-item:last-child {
+    border-bottom: none;
+}
+
+
+.report-item:hover {
+    background: #f8fafc;
+}
+
+
+.report-item-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    background: #f1f5f9;
+
+    font-size: 17px;
+}
+
+
+.report-item-content {
+    flex: 1;
+}
+
+
+.report-item-content h3 {
+    color: #334155;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.report-item-content p {
+    margin-top: 3px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   STATUS BADGES
+   ===================================================== */
+
+.status-badge {
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.status-review {
+    background: #fef3c7;
+    color: #a16207;
+}
+
+
+.status-resolved {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+
+.status-submitted {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+
+/* =====================================================
+   HOME RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .navbar-container {
+        padding: 14px 18px;
+    }
+
+
+    .nav-title {
+        font-size: 16px;
+    }
+
+
+    .nav-links {
+        margin-left: auto;
+
+        gap: 17px;
+    }
+
+
+    .nav-links a.active::after {
+        bottom: -15px;
+    }
+
+
+    .user-name {
+        display: none;
+    }
+
+
+    .dashboard {
+        padding: 30px 18px 50px;
+    }
+
+
+    .welcome-section h1 {
+        font-size: 27px;
+    }
+
+
+    .welcome-description {
+        font-size: 14px;
+    }
+
+
+    .report-banner {
+        padding: 22px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .report-banner-content {
+        align-items: flex-start;
+    }
+
+
+    .report-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .report-item {
+        padding: 16px;
+    }
+
+
+    .report-item-content h3 {
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .nav-logo {
+        width: 34px;
+        height: 34px;
+    }
+
+
+    .nav-title {
+        font-size: 15px;
+    }
+
+
+    .nav-links {
+        gap: 12px;
+    }
+
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+    .welcome-section h1 {
+        font-size: 25px;
+    }
+
+
+    .report-banner h2 {
+        font-size: 16px;
+    }
+
+
+    .report-banner p {
+        font-size: 12px;
+    }
+
+
+    .status-badge {
+        font-size: 10px;
+
+        padding: 4px 7px;
+    }
+
+}
+
+/* =====================================================
+   REPORT ISSUE PAGE
+   ===================================================== */
+
+
+/* ---------- PAGE ---------- */
+
+.report-page {
+    min-height: calc(100vh - 71px);
+
+    padding: 45px 30px 70px;
+
+    background: #f8fafc;
+}
+
+
+.report-container {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+/* ---------- PAGE HEADER ---------- */
+
+.page-header {
+    margin-bottom: 30px;
+}
+
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    color: #0f766e;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+.page-label {
+    margin-bottom: 7px;
+
+    color: #0f766e;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.page-header h1 {
+    color: #172033;
+
+    font-size: 32px;
+
+    letter-spacing: -0.8px;
+}
+
+
+.page-header > p:last-child {
+    max-width: 650px;
+
+    margin-top: 8px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   FORM
+   ===================================================== */
+
+.report-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.form-section {
+    padding: 27px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 13px;
+
+    background: white;
+}
+
+
+.form-section-heading {
+    margin-bottom: 24px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+.form-section-heading h2 {
+    color: #172033;
+
+    font-size: 17px;
+}
+
+
+.form-section-heading p {
+    margin-top: 4px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* ---------- INPUTS ---------- */
+
+.report-form input[type="text"],
+.report-form select,
+.report-form textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d7dee8;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: white;
+
+    color: #172033;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.report-form textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+.report-form input[type="text"]:focus,
+.report-form select:focus,
+.report-form textarea:focus {
+    border-color: #0f766e;
+
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1);
+}
+
+
+.report-form select {
+    cursor: pointer;
+}
+
+
+.report-form textarea::placeholder,
+.report-form input::placeholder {
+    color: #94a3b8;
+}
+
+
+/* =====================================================
+   LOCATION
+   ===================================================== */
+
+.location-btn {
+    padding: 10px 15px;
+
+    border: 1px solid #99f6e4;
+    border-radius: 8px;
+
+    background: #f0fdfa;
+    color: #0f766e;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.location-btn:hover {
+    background: #ccfbf1;
+}
+
+
+.location-note {
+    margin-top: 7px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   IMAGE UPLOAD
+   ===================================================== */
+
+.upload-area {
+    padding: 35px 20px;
+
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+
+    text-align: center;
+
+    background: #f8fafc;
+}
+
+
+.upload-icon {
+    font-size: 28px;
+}
+
+
+.upload-area h3 {
+    margin-top: 9px;
+
+    color: #334155;
+
+    font-size: 14px;
+}
+
+
+.upload-area p {
+    margin-top: 3px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+.upload-btn {
+    display: inline-block;
+
+    margin-top: 14px;
+
+    padding: 9px 15px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+
+    background: white;
+    color: #334155;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.upload-btn:hover {
+    border-color: #0f766e;
+
+    color: #0f766e;
+}
+
+
+/* =====================================================
+   PRIORITY
+   ===================================================== */
+
+.priority-options {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+.priority-option {
+    padding: 14px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    border: 1px solid #d7dee8;
+    border-radius: 9px;
+
+    cursor: pointer;
+}
+
+
+.priority-option:hover {
+    border-color: #99f6e4;
+
+    background: #f8fafc;
+}
+
+
+.priority-option input {
+    margin-top: 3px;
+
+    accent-color: #0f766e;
+}
+
+
+.priority-option span {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.priority-option strong {
+    color: #334155;
+
+    font-size: 13px;
+}
+
+
+.priority-option small {
+    margin-top: 2px;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   SUBMIT AREA
+   ===================================================== */
+
+.submit-area {
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding-top: 5px;
+}
+
+
+.cancel-btn {
+    padding: 12px 20px;
+
+    border: 1px solid #d7dee8;
+    border-radius: 8px;
+
+    background: white;
+    color: #64748b;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.cancel-btn:hover {
+    background: #f8fafc;
+}
+
+
+.submit-btn {
+    width: auto;
+
+    padding: 12px 22px;
+}
+
+
+/* =====================================================
+   REPORT PAGE RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .report-page {
+        padding: 30px 18px 50px;
+    }
+
+
+    .page-header h1 {
+        font-size: 27px;
+    }
+
+
+    .form-section {
+        padding: 21px 18px;
+    }
+
+
+    .priority-options {
+        grid-template-columns: 1fr;
+    }
+
+
+    .submit-area {
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+    }
+
+
+    .cancel-btn,
+    .submit-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
+/* =====================================================
+   MY REPORTS PAGE
+   ===================================================== */
+
+
+/* ---------- PAGE ---------- */
+
+.reports-page {
+    min-height: calc(100vh - 71px);
+
+    padding: 45px 30px 70px;
+
+    background: #f8fafc;
+}
+
+
+.reports-container {
+    max-width: 1050px;
+
+    margin: 0 auto;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.reports-header {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 28px;
+}
+
+
+.reports-header h1 {
+    color: #172033;
+
+    font-size: 32px;
+
+    letter-spacing: -0.8px;
+}
+
+
+.reports-header p:last-child {
+    margin-top: 7px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.new-report-btn {
+    width: auto;
+
+    flex-shrink: 0;
+
+    padding: 11px 17px;
+}
+
+
+/* =====================================================
+   FILTERS
+   ===================================================== */
+
+.reports-filters {
+    margin-bottom: 20px;
+
+    padding: 5px;
+
+    display: inline-flex;
+
+    gap: 3px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+
+    background: white;
+}
+
+
+.filter-btn {
+    padding: 8px 15px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: #64748b;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.filter-btn:hover {
+    color: #0f766e;
+}
+
+
+.filter-btn.active {
+    background: #0f766e;
+
+    color: white;
+}
+
+
+/* =====================================================
+   REPORT CARDS
+   ===================================================== */
+
+.all-reports {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.full-report-card {
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+
+    background: white;
+
+    color: inherit;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.full-report-card:hover {
+    border-color: #b2dfdb;
+
+    box-shadow: 0 7px 20px rgba(15, 118, 110, 0.07);
+
+    transform: translateY(-1px);
+}
+
+
+/* ---------- ICON ---------- */
+
+.full-report-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    background: #f1f5f9;
+
+    font-size: 22px;
+}
+
+
+/* ---------- CONTENT ---------- */
+
+.full-report-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.report-card-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.report-card-top h2 {
+    color: #334155;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.report-description {
+    margin-top: 6px;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ---------- META ---------- */
+
+.report-meta {
+    margin-top: 10px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+
+/* ---------- ARROW ---------- */
+
+.report-arrow {
+    color: #94a3b8;
+
+    font-size: 20px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.full-report-card:hover .report-arrow {
+    color: #0f766e;
+
+    transform: translateX(3px);
+}
+
+
+/* =====================================================
+   REPORTS RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .reports-page {
+        padding: 30px 18px 50px;
+    }
+
+
+    .reports-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .reports-header h1 {
+        font-size: 27px;
+    }
+
+
+    .new-report-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .reports-filters {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .filter-btn {
+        padding: 9px 8px;
+    }
+
+
+    .full-report-card {
+        padding: 16px;
+
+        align-items: flex-start;
+    }
+
+
+    .full-report-icon {
+        width: 43px;
+        height: 43px;
+
+        font-size: 18px;
+    }
+
+
+    .report-card-top {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 7px;
+    }
+
+
+    .report-card-top h2 {
+        font-size: 13px;
+    }
+
+
+    .report-description {
+        font-size: 11px;
+    }
+
+
+    .report-meta {
+        gap: 8px;
+    }
+
+
+    .report-arrow {
+        display: none;
+    }
+
+}
+/* =====================================================
+   COMPLAINT DETAILS PAGE
+   ===================================================== */
+
+
+/* ---------- PAGE ---------- */
+
+.details-page {
+    min-height: calc(100vh - 71px);
+
+    padding: 40px 30px 70px;
+
+    background: #f8fafc;
+}
+
+
+.details-container {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+/* ---------- COMPLAINT HEADER ---------- */
+
+.complaint-header {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.complaint-header h1 {
+    margin-top: 3px;
+
+    color: #172033;
+
+    font-size: 30px;
+
+    letter-spacing: -0.7px;
+}
+
+
+.complaint-date {
+    margin-top: 7px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+.complaint-header > .status-badge {
+    margin-top: 10px;
+
+    padding: 7px 12px;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   DETAILS CARDS
+   ===================================================== */
+
+.details-card {
+    margin-bottom: 18px;
+
+    padding: 26px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 13px;
+
+    background: white;
+}
+
+
+.details-card-heading {
+    margin-bottom: 24px;
+}
+
+
+.details-card-heading h2 {
+    color: #172033;
+
+    font-size: 17px;
+}
+
+
+.details-card-heading p {
+    margin-top: 4px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   STATUS TIMELINE
+   ===================================================== */
+
+.status-timeline {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.status-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 17px;
+    bottom: 17px;
+
+    left: 16px;
+
+    width: 2px;
+
+    background: #e2e8f0;
+}
+
+
+.timeline-step {
+    position: relative;
+
+    display: flex;
+
+    gap: 17px;
+
+    min-height: 90px;
+}
+
+
+.timeline-marker {
+    position: relative;
+
+    z-index: 1;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 2px solid #e2e8f0;
+    border-radius: 50%;
+
+    background: white;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.timeline-content {
+    padding-bottom: 25px;
+}
+
+
+.timeline-content h3 {
+    color: #475569;
+
+    font-size: 14px;
+}
+
+
+.timeline-content p {
+    max-width: 550px;
+
+    margin-top: 3px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+.timeline-content span {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #cbd5e1;
+
+    font-size: 10px;
+}
+
+
+/* ---------- COMPLETED STEP ---------- */
+
+.timeline-step.completed .timeline-marker {
+    border-color: #0f766e;
+
+    background: #0f766e;
+
+    color: white;
+}
+
+
+.timeline-step.completed .timeline-content h3 {
+    color: #0f766e;
+}
+
+
+/* ---------- CURRENT STEP ---------- */
+
+.timeline-step.current .timeline-marker {
+    border-color: #0f766e;
+
+    background: #ccfbf1;
+
+    color: #0f766e;
+}
+
+
+.timeline-step.current .timeline-content h3 {
+    color: #172033;
+
+    font-weight: 800;
+}
+
+
+.timeline-step.current .timeline-content p {
+    color: #64748b;
+}
+
+
+/* =====================================================
+   ISSUE INFORMATION
+   ===================================================== */
+
+.issue-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.info-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.info-item span {
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+.info-item strong {
+    color: #334155;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+   ===================================================== */
+
+.issue-description {
+    color: #64748b;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   EVIDENCE
+   ===================================================== */
+
+.evidence-placeholder {
+    min-height: 190px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+
+    background: #f8fafc;
+
+    text-align: center;
+}
+
+
+.evidence-placeholder > div {
+    font-size: 30px;
+}
+
+
+.evidence-placeholder p {
+    margin-top: 8px;
+
+    color: #475569;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.evidence-placeholder span {
+    margin-top: 3px;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   ACTIONS
+   ===================================================== */
+
+.details-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    padding-top: 5px;
+}
+
+
+/* =====================================================
+   DETAILS RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .details-page {
+        padding: 30px 18px 50px;
+    }
+
+
+    .complaint-header {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .complaint-header h1 {
+        font-size: 26px;
+    }
+
+
+    .complaint-header > .status-badge {
+        margin-top: 0;
+    }
+
+
+    .details-card {
+        padding: 21px 18px;
+    }
+
+
+    .issue-info-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .timeline-step {
+        gap: 13px;
+    }
+
+
+    .timeline-content {
+        padding-bottom: 20px;
+    }
+
+
+    .timeline-content h3 {
+        font-size: 13px;
+    }
+
+
+    .details-actions {
+        justify-content: stretch;
+    }
+
+
+    .details-actions .cancel-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
